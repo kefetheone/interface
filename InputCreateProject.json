@@ -1,0 +1,10 @@
+{
+	"name": "Project X",
+	"starts_at": "2018-05-01",
+	"ends_at": "2019-05-01",
+	"client": "Bender",
+	"project_code": 76,
+	"description": "XXX",
+	"project_state": "Confirmed",
+	"timeentry_lockout": -1
+}

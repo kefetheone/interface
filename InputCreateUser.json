@@ -1,0 +1,16 @@
+{
+	"first_name": "Balázs",
+	"last_name": "Galgóczi",
+	"email": "galgoczaib@starschema.net",
+	"billable": true,
+	"hire_date": "2018-03-26",
+	"termination_date": null,
+	"mobile_phone": null,
+	"office_phone": null,
+	"employee_number": "galgoczib",
+	"billability_target": 100.0,
+	"billrate": 5360,
+	"role": "BI developer",
+	"discipline": "D4",
+	"location": "D4"
+}

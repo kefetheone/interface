@@ -1,0 +1,21 @@
+{
+	"first_name": "Edna",
+	"last_name": "Pipi",
+	"email": "pipi@starschema.net",
+	"billable": true,
+	"hire_date": "2018-04-01",
+	"role": "Accountant",
+	"discipline": "D4",
+	"location": "Balance Building",
+	"billable": true,
+	"hire_date": "2018-04-01",
+	"termination_date": null,
+	"mobile_phone": "+36 70 555 5555",
+	"office_phone": null,
+	"employee_number": null,
+	"billability_target": 100.0,
+	"billrate": -1.0,
+	"role": "Accountant",
+	"discipline": "D0",
+	"location": "Balance Building"
+}
