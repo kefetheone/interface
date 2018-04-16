@@ -17,7 +17,6 @@ $r=Invoke-WebRequest -Uri $url -Method GET -Headers $headers -Body $body -OutFil
 
 $json_response = Get-Content $response_file
 $json_response_obj = ConvertFrom-Json ($json_response -join "`n")
-#$json_response_obj.data.id|format-List
 
 foreach ($uid in $json_response_obj.data.id){
     if ($uid -ne 439288)
