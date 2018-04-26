@@ -1,0 +1,2 @@
+SELECT * FROM [dbo].[STG_10kFT_Users] A
+WHERE (A.[account_owner]<>1) AND NOT EXISTS (SELECT 1 as value from [Mac].[vw_Active_EmployeeGeneral] B WHERE A.employee_number=B.EMPLOYEENUMBER COLLATE Hungarian_CI_AS)

@@ -2,9 +2,10 @@
 
 CLS
 
-$url = 'https://api.10000ft.com/api/v1/users'
+$url = 'https://api.10000ft.com/api/v1/projects'
 $response_file = 'c:\temp\Response_UsersQuery.json'
 
+#API key - donnerk/trial
 $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
 $headers.Add("auth", 'SW9wWUtLTE5GbzN4QUVlUFJJN0RLTFJ5Y25DemRkV0UvK1I4Z2pVd2p3T1ljVUpIU3pSMEwwYTM3VnZwCmJySGM3QUlOYkFjVHV6YXhwYWJFNkJUeW5wbVpjaUpYRkl1N2YvWi9pMjBlMi9NQTYxVXVQWUpvZnIyQwprVzFaNHdQego=')
 
@@ -17,13 +18,11 @@ $r=Invoke-WebRequest -Uri $url -Method GET -Headers $headers -Body $body -OutFil
 
 $json_response = Get-Content $response_file
 $json_response_obj = ConvertFrom-Json ($json_response -join "`n")
-#$json_response_obj.data.id|format-List
 
 foreach ($uid in $json_response_obj.data.id){
-    if ($uid -eq '439288')
-    {
-        $json_response_obj.data.id[$uid]|format-List
-    }
+    $url = 'https://api.10000ft.com/api/v1/projects/'+$uid
+    $url
+    $r=Invoke-WebRequest -Uri $url -Method DELETE -Headers $headers
 }
 
 echo '-- end --'
